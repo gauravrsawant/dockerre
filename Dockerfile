@@ -12,6 +12,7 @@ RUN npm install
 
 # Copy the rest of the application code
 COPY . .
+RUN chmod +x ./node_modules/.bin/jest
 
 # Run tests
 CMD [ "npm", "test" ]
