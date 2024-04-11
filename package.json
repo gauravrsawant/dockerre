@@ -1,0 +1,22 @@
+{
+  "name": "palindrome",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aars03/palindrome.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aars03/palindrome/issues"
+  },
+  "homepage": "https://github.com/aars03/palindrome#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
