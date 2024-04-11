@@ -1,9 +1,10 @@
 name: Docker Build and Push
 
 on:
-  push:
-    branches:
-      - main  # change this to your default branch name if it's different
+  pull_request:
+    branches: 
+      - main
+    types: [closed]
 
 jobs:
   build-and-push:
