@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
-
+COPY eslint.config.js
 # Install dependencies
 RUN npm install
 
@@ -15,4 +15,6 @@ COPY . .
 RUN chmod +x ./node_modules/.bin/jest
 
 # Run tests
+RUN npx eslint .
+
 CMD [ "npm", "test" ]
