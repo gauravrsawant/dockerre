@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
-COPY eslint.config.js
+COPY eslint.config.js ./
 # Install dependencies
 RUN npm install
 
