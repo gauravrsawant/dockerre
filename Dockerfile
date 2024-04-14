@@ -6,7 +6,6 @@ WORKDIR /app
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
-COPY eslint.config.js ./
 
 # Install dependencies
 RUN npm install
@@ -19,6 +18,7 @@ RUN chmod +x ./node_modules/.bin/jest
 
 # Install ESLint globally
 RUN npm install -g eslint
+COPY eslint.config.js ./
 
 # Run ESLint
 RUN eslint .
