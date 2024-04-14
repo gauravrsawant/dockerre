@@ -22,7 +22,7 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t $DOCKER_USERNAME/palindrome .
-          docker push $DOCKER_USERNAME/palindrome
+          docker build -t $DOCKER_USERNAME/palindrome_er .
+          docker push $DOCKER_USERNAME/palindrome_er
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
